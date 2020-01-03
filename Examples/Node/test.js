@@ -1,4 +1,4 @@
-rainLib = require('../../Library/RainLib');
+rainLib = require('../../RainLib/RainLib');
 console.log(rainLib);
 
 
