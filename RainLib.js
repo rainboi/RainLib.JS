@@ -14,7 +14,7 @@ const rainLib = {
     },
 
     sort: {
-        selectionSort: function (array, inDirect = false) {
+        selection: function (array, inDirect = false) {
             if (inDirect) {
                 array = array.slice(0);
             }
@@ -35,7 +35,7 @@ const rainLib = {
             return array;
         },
 
-        bubbleSort: function (array, inDirect = false) {
+        bubble: function (array, inDirect = false) {
             if (inDirect) {
                 array = array.slice(0);
             }
@@ -60,7 +60,7 @@ const rainLib = {
             return array;
         },
 
-        recursiveBubbleSort: function (array, inDirect = false, end = null) {
+        recursiveBubble: function (array, inDirect = false, end = null) {
             if (inDirect) {
                 array = array.slice(0);
             }
