@@ -20,11 +20,6 @@ function selectionSort(array, inDirect = false) {
 }
 
 
-if (require.main === module) {
-    console.log(process.argv);
-}
-
-
 module.exports = {
     selectionSort,
 };

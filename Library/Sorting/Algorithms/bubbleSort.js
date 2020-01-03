@@ -24,11 +24,6 @@ function bubbleSort(array, inDirect = false) {
 }
 
 
-if (require.main === module) {
-    console.log(process.argv);
-}
-
-
 module.exports = {
     bubbleSort,
 };

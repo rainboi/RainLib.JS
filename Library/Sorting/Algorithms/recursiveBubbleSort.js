@@ -26,11 +26,6 @@ function recursiveBubbleSort(array, inDirect = false, end = null) {
 }
 
 
-if (require.main === module) {
-    console.log(process.argv);
-}
-
-
 module.exports = {
     recursiveBubbleSort,
 };

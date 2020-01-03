@@ -10,11 +10,6 @@ function randomArrayNumbers(length, minValue = -10, maxValue = 10) {
 }
 
 
-if (require.main === module) {
-    console.log(process.argv);
-}
-
-
 module.exports = {
     randomArrayNumbers,
 };
