@@ -131,3 +131,7 @@ const rainLib = {
     }
 
 }
+
+if (require && require.main === module) {
+    console.log(rainLib);
+}
