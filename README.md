@@ -39,7 +39,7 @@ const bubbleSort = require('./RainLib/Sorting/Algorithms/bubbleSort');
 Example 1:
 
 View [test.js](Examples/Node/test.js), You can instantly 
-[![Run on Repl.it](https://rainlibjs.rainboi.repl.run)](https://rainlibjs.rainboi.repl.run)
+[![Run on Repl.it](https://repl.it/badge/github/rainboi/RainLib.JS)](https://rainlibjs.rainboi.repl.run/)
 
 
 Example 2:
