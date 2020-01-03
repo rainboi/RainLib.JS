@@ -89,5 +89,3 @@ const rainLib = {
     }
 
 }
-
-console.log(rainLib);
