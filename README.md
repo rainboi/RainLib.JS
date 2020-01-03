@@ -38,7 +38,7 @@ const bubbleSort = require('./RainLib/Sorting/Algorithms/bubbleSort');
 
 Example 1:
 
-View [test.js](Examples/Node/test.js), You can instantly 
+View [test.js](Examples/Node/test.js), you can instantly 
 [![Run on Repl.it](https://repl.it/badge/github/rainboi/RainLib.JS)](https://rainlibjs.rainboi.repl.run/)
 
 
