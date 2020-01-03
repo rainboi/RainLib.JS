@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usage With CDN</title>
+    <style>
+        #app {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <div>
+            <h3>Random Array</h3>
+            <ul>
+                <li v-for="number in array">{{ number }}</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Sorted Array (selection)</h3>
+            <ul>
+                <li v-for="number in selection">{{ number }}</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Sorted Array (bubble)</h3>
+            <ul>
+                <li v-for="number in bubble">{{ number }}</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Sorted Array (recursive bubble)</h3>
+            <ul>
+                <li v-for="number in recursiveBubble">{{ number }}</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rainboi/RainLib.JS@0.1-alpha/RainLib.js"></script>
+    <script>
+        console.log("RainLib:", rainLib)
+        const randomArray = rainLib.generation.randomArrayNumbers(10);
+        new Vue({
+            el: '#app',
+            data: {
+                array: randomArray,
+                selection: rainLib.sort.selection(randomArray),
+                bubble: rainLib.sort.bubble(randomArray),
+                recursiveBubble: rainLib.sort.recursiveBubble(randomArray),
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
