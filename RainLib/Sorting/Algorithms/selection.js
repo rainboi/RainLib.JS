@@ -1,4 +1,4 @@
-function selectionSort(array, inDirect = false, key = null) {
+function selection(array, inDirect = false, key = null) {
     if (inDirect) {
         array = array.slice(0);
     }
@@ -35,5 +35,5 @@ function selectionSort(array, inDirect = false, key = null) {
 
 
 module.exports = {
-    selectionSort,
+    selection,
 };

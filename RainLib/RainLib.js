@@ -1,4 +1,4 @@
 module.exports = {
-    generation: require('./Generations/generation'),
-    sort: require('./Sorting/sort'),
+    Generation: require('./Generations/Generation'),
+    Sort: require('./Sorting/Sort'),
 }

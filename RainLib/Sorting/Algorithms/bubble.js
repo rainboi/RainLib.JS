@@ -1,4 +1,4 @@
-function bubbleSort(array, inDirect = false, key = null) {
+function bubble(array, inDirect = false, key = null) {
     if (inDirect) {
         array = array.slice(0);
     }
@@ -43,5 +43,5 @@ function bubbleSort(array, inDirect = false, key = null) {
 
 
 module.exports = {
-    bubbleSort,
+    bubble,
 };

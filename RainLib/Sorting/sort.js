@@ -1,6 +1,6 @@
 module.exports = {
-    selection: require('./Algorithms/selectionSort').selectionSort,
-    bubble: require('./Algorithms/bubbleSort').bubbleSort,
-    recursiveBubble: require('./Algorithms/recursiveBubbleSort').recursiveBubbleSort,
-    insertion: require('./Algorithms/insertionSort').insertionSort,
+    selection: require('./Algorithms/selection').selection,
+    bubble: require('./Algorithms/bubble').bubble,
+    recursiveBubble: require('./Algorithms/recursiveBubble').recursiveBubble,
+    insertion: require('./Algorithms/insertion').insertion,
 }

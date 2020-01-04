@@ -1,4 +1,4 @@
-function recursiveBubbleSort(array, inDirect = false, key = null, end = null) {
+function recursiveBubble(array, inDirect = false, key = null, end = null) {
     if (inDirect) {
         array = array.slice(0);
     }
@@ -30,12 +30,12 @@ function recursiveBubbleSort(array, inDirect = false, key = null, end = null) {
         return array;
     }
     else {
-        return recursiveBubbleSort(array, false, key, end - 1);
+        return recursiveBubble(array, false, key, end - 1);
     }
 
 }
 
 
 module.exports = {
-    recursiveBubbleSort,
+    recursiveBubble,
 };

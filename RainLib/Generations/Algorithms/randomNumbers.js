@@ -1,4 +1,4 @@
-function randomArrayNumbers(length, minValue = -10, maxValue = 10) {
+function randomNumbers(length, minValue = -10, maxValue = 10) {
     const result = [];
 
     for (let i = 0; i < length; i++) {
@@ -11,5 +11,5 @@ function randomArrayNumbers(length, minValue = -10, maxValue = 10) {
 
 
 module.exports = {
-    randomArrayNumbers,
+    randomNumbers,
 };

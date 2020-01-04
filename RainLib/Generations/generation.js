@@ -1,3 +1,3 @@
 module.exports = {
-    randomArrayNumbers: require('./Algorithms/randomArrayNumbers').randomArrayNumbers,
+    randomNumbers: require('./Algorithms/randomNumbers').randomNumbers,
 }

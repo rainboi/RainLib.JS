@@ -1,8 +1,8 @@
-const rainLib = {
+const RainLib = {
 
 
-    generation: {
-        randomArrayNumbers: function (length, minValue = -10, maxValue = 10) {
+    Generation: {
+        randomNumbers: function (length, minValue = -10, maxValue = 10) {
             const result = [];
 
             for (let i = 0; i < length; i++) {
@@ -15,7 +15,7 @@ const rainLib = {
     },
 
 
-    sort: {
+    Sort: {
 
         selection: function (array, inDirect = false, key = null) {
             if (inDirect) {
@@ -127,7 +127,7 @@ const rainLib = {
                 return array;
             }
             else {
-                return recursiveBubbleSort(array, false, key, end - 1);
+                return this.recursiveBubble(array, false, key, end - 1);
             }
 
         },
@@ -173,4 +173,9 @@ const rainLib = {
 
 if (require && require.main === module) {
     console.log(rainLib);
+}
+
+module.exports = {
+    Generation: RainLib.Generation,
+    Sort: RainLib.Sort,
 }

@@ -46,15 +46,15 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://cdn.jsdelivr.net/gh/rainboi/RainLib.JS@0.1-alpha/RainLib.js"></script>
     <script>
-        console.log("RainLib:", rainLib)
-        const randomArray = rainLib.generation.randomArrayNumbers(10);
+        console.log("RainLib:", RainLib)
+        const randomArray = RainLib.Generation.randomNumbers(10);
         new Vue({
             el: '#app',
             data: {
                 array: randomArray,
-                selection: rainLib.sort.selection(randomArray),
-                bubble: rainLib.sort.bubble(randomArray),
-                recursiveBubble: rainLib.sort.recursiveBubble(randomArray),
+                selection: RainLib.Sort.selection(randomArray),
+                bubble: RainLib.Sort.bubble(randomArray),
+                recursiveBubble: RainLib.Sort.recursiveBubble(randomArray),
             }
         })
     </script>

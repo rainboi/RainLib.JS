@@ -1,8 +1,11 @@
-rainLib = require('../../RainLib/RainLib');
-console.log(rainLib);
+// Folder Structure
+const RainLib = require('../../RainLib/RainLib');
+// Stand-Alone
+// const RainLib = require('../../RainLib');
+console.log(RainLib);
 
 
-const testArray = rainLib.generation.randomArrayNumbers(10, -100, 100);
+const testArray = RainLib.Generation.randomNumbers(10, -100, 100);
 
 const testArrayOfObjects = [
     {
@@ -37,30 +40,22 @@ const testArrayOfObjects = [
     },
 ]
 
-console.log('\nStarting Test Array Of Numbers:', testArray, '\n\n');
+console.log('\nStarting Test Array Of Numbers:', testArray, '\n');
 
-console.log('Selection Sort:', rainLib.sort.selection(testArray, true));
-console.log('Test Array:', testArray, '\n');
+console.log('\nSelection Sort:', RainLib.Sort.selection(testArray, true));
 
-console.log('Bubble Sort:', rainLib.sort.bubble(testArray, true));
-console.log('Test Array:', testArray, '\n');
+console.log('\nBubble Sort:', RainLib.Sort.bubble(testArray, true));
 
-console.log('Recursive Bubble Sort:', rainLib.sort.recursiveBubble(testArray, true));
-console.log('Test Array:', testArray, '\n');
+console.log('\nRecursive Bubble Sort:', RainLib.Sort.recursiveBubble(testArray, true));
 
-console.log('Insertion Sort:', rainLib.sort.insertion(testArray, true));
-console.log('Test Array:', testArray);
+console.log('\nInsertion Sort:', RainLib.Sort.insertion(testArray, true));
 
-console.log('\nStarting Test Array Of Objects:', testArrayOfObjects, '\n\n');
+console.log('\n\nStarting Test Array Of Objects:', testArrayOfObjects, '\n');
 
-console.log('Selection Sort With Key:', rainLib.sort.selection(testArrayOfObjects, true, "rating"));
-console.log('Test Array:', testArrayOfObjects, '\n');
+console.log('\nSelection Sort With Key:', RainLib.Sort.selection(testArrayOfObjects, true, "rating"));
 
-console.log('Bubble Sort With Key:', rainLib.sort.bubble(testArrayOfObjects, true, "rating"));
-console.log('Test Array:', testArrayOfObjects, '\n');
+console.log('\nBubble Sort With Key:', RainLib.Sort.bubble(testArrayOfObjects, true, "rating"));
 
-console.log('Recursive Bubble Sort With Key:', rainLib.sort.recursiveBubble(testArrayOfObjects, true, "rating"));
-console.log('Test Array:', testArrayOfObjects, '\n');
+console.log('\nRecursive Bubble Sort With Key:', RainLib.Sort.recursiveBubble(testArrayOfObjects, true, "rating"));
 
-console.log('Insertion Sort With Key:', rainLib.sort.insertion(testArrayOfObjects, true, "rating"));
-console.log('Test Array:', testArrayOfObjects, '\n');
+console.log('\nInsertion Sort With Key:', RainLib.Sort.insertion(testArrayOfObjects, true, "rating"));

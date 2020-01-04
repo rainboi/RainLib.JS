@@ -1,4 +1,4 @@
-function insertionSort(array, inDirect = false, key = null) {
+function insertion(array, inDirect = false, key = null) {
     if (inDirect) {
         array = array.slice(0);
     }
@@ -34,5 +34,5 @@ function insertionSort(array, inDirect = false, key = null) {
 
 
 module.exports = {
-    insertionSort,
+    insertion,
 };
