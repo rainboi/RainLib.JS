@@ -6,7 +6,7 @@ RainLib is a javascript library that provides algorithms of all sorts, which you
 ## WEB Usage:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/rainboi/RainLib.JS@0.1-alpha/RainLib.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rainboi/RainLib.JS@vv0.1.1-alpha/RainLibWEB.js"></script>
 ```
 
 View WEB example with RainLib/Vue using CDN - [WEB example](https://rainlib.netlify.com/)
