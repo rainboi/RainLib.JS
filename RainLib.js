@@ -171,9 +171,6 @@ const RainLib = {
 
 }
 
-if (require && require.main === module) {
-    console.log(rainLib);
-}
 
 module.exports = {
     Generation: RainLib.Generation,
